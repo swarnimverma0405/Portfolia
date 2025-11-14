@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f8fb;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #222;
+  padding: 12px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.subtitle {
+  color: #555;
+}
+
+/* SINGLE COLUMN LAYOUT */
+.layout {
+  display: block;
+}
+
+/* CARD STYLING */
+.card {
+  background-color: #fdfdfd;
+  padding: 18px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* EDUCATION */
+.edu-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #f7f7f7;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.edu-image img {
+  width: 180px;        /* FIXED SIZE */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* SKILLS */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: #e6e6fa;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* PROJECTS */
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  background: #eee;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #777;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .edu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .edu-image img {
+    width: 100%;
+    height: auto;
+  }
+}
